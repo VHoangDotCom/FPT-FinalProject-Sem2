@@ -1,0 +1,199 @@
+html {
+    box-sizing: border-box;
+}
+body {
+    background-color: #ffffff;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/*  Product Details  */
+.product-details-main{
+    margin-top: 80px;
+}
+.product-details-box{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.product-details-img{
+    flex: 40%;
+}
+.product-details-title{
+    margin-top: 20px;
+}
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-colum{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+.small_img{
+    border: 1px solid #7b7b7b;
+}
+.product-details-in4{
+    flex: 60%;
+}
+.price_detail {
+    margin-top: 30px;
+}
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+.product-count {
+    margin-top: 15px;
+}
+.product-count .qtyminus,
+.product-count .qtyplus {
+    width: 34px;
+    height: 34px;
+    background: #EBA83A;
+    text-align: center;
+    font-size: 19px;
+    line-height: 36px;
+    color: #fff;
+    cursor: pointer;
+
+}
+.display-flex{
+    display: flex;
+}
+.product-count .qtyminus {
+    border-radius: 3px 0 0 3px;
+
+}
+.product-count .qtyplus {
+    border-radius: 0 3px 3px 0;
+}
+.product-count .qty {
+    width: 60px;
+    text-align: center;
+}
+.round-black-btn {
+    border-radius: 4px;
+    background:#EBA83A;
+    color: #fff;
+    padding: 7px 45px;
+    display: inline-block;
+    margin-top: 20px;
+    border: solid 2px #EBA83A;
+    transition: all 0.5s ease-in-out 0s;
+    text-decoration: none;
+}
+.round-black-btn:hover,
+.round-black-btn:focus {
+    background: transparent;
+    color: #EBA83A;
+    text-decoration: none;
+}
+.product-info-tabs {
+    margin-top: 25px;
+}
+.product-info-tabs .nav-tabs .nav-item {
+    margin-bottom: 0;
+}
+/*.product-info-tabs .nav-tabs .nav-link {*/
+/*    border: none;*/
+/*    border-bottom: 2px solid transparent;*/
+/*    color: #323232;*/
+/*}*/
+
+/*#description-tab:hover {*/
+/*    border: none;*/
+/*    border-bottom: 2px solid #d8d8d8;*/
+/*    font-weight: bold;*/
+/*}*/
+/*#review-tab:hover {*/
+/*    border: none;*/
+/*    border-bottom: 2px solid #d8d8d8;*/
+/*    font-weight: bold;*/
+/*}*/
+.product-info-tabs .tab-content .tab-pane {
+    padding: 30px 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #7a7a7a;
+}
+#review-tab{
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #000000;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+#description-tab{
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #000000;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+.review-form .form-group {
+    clear: both;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.review-form .rate {
+    float: none;
+    display: inline-block;
+}
+.review-heading {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    color: #000;
+}
+.review-form .form-control {
+    font-size: 14px;
+}
+.review-form input.form-control {
+    height: 40px;
+}
+.review-form textarea.form-control {
+    resize: none;
+}
+.review-form .round-black-btn {
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float: right;
+    width: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 21px;
+    color:#ccc;
+    margin-bottom: 0;
+    line-height: 21px;
+}
+.rate:not(:checked) > label:before {
+    content: '\2605';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
